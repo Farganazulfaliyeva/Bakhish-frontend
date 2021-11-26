@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  padding:0;
+  margin:0;
+}
+/* Navbar */
+.navbar-nav a {
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  color:rgb(0, 0, 0);
+  margin-right:10px;
+}
+.navbar-nav a.active, .navbar-nav a:hover {
+color: #ff7706 !important;
+}
+/*Navbar End*/
+
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #ff7706;
+  color: white;
+  padding: 5px 40px;;
+  border: none;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  border-radius: 30px;
+}
+
+input[type=submit]:hover {
+  background-color: #ff7706a8;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  margin-top: 100px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Right column */
+.right{
+  background-image: url("image/back.png");
+  height: 550px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.right:after{
+  width: 100%;
+  height:100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left:0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.right ul{
+  position: absolute;
+  z-index: 2;
+  color:#fff;
+  list-style: none;
+  margin: 0;
+  top: 55%;
+  left: 30%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.right ul li{
+  margin-bottom: 50px;
+  font-family: 'Lato', sans-serif;
+}
+.right ul li a{
+  color:#fff;
+}
+.icon:before{
+  font-family: FontAwesome;
+  display: inline-block;
+  padding-right: 6px;
+  vertical-align: middle;
+  font-size: 27px;
+}
+.icon:hover{
+  color:#ff7706;
+}
+.icon-marker:before{content: "\f041";}
+.icon-email:before{content: "\f1d8";}
+.icon-number:before{content: "\f10b";}
+
+/* Sosial Media */
+.sosial-media{
+  text-align: center;
+  height: 30%;
+  margin-top: 3%;
+}
+.sosial-heading{
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+.sosial-icon{
+  display: inline-flex;
+  align-items: center;
+  height: 100px;
+}
+
+.sosial-icon i {
+  padding: 0px 10px;
+  font-size: 3em;
+}
+
+.ic-fb{
+  color: #4867AA;
+  cursor: pointer;
+  text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+  transition: all ease-in-out 150ms;
+}
+
+.ic-fb:hover{
+  margin-top: -10px;
+  text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+  transform: translate(0, -8);
+}
+
+ .ic-in {
+  color: #c32aa3;
+  cursor: pointer;
+  text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+  transition: all ease-in-out 150ms;
+}
+
+ .ic-in:hover {
+  margin-top: -10px;
+  text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+  transform: translate(0, -8);
+}
+
+.ic-pin{
+  color: #bd081c;
+  cursor: pointer;
+  text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  transition: all ease-in-out 150ms;
+}
+
+.ic-pin:hover {
+  margin-top: -10px;
+  text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
+  transform: translate(0, -5);
+}
+.ic-wp {
+  color: #25d366;
+  cursor: pointer;
+  text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+  transition: all ease-in-out 150ms;
+}
+.ic-wp:hover {
+  margin-top: -10px;
+  text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+  transform: translate(0, -8);
+}
+/* Sosial Media End */
+/* Footer */
+.footer-copyright{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #303131;
+  color:#fff;
+  text-align: center;
+  height: 40px;
+  padding-top: 10px;
+}
+/* Footer End */
+
+/* Media Query */
+@media only screen and (max-width: 600px) {
+  .navbar-nav.ml-auto{
+      background: rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+  .navbar-toggler{
+    font-size: 1rem !important;
+    background: #fff !important;
+    color: rgba(0,0,0,.5) !important;
+  }
+  .navbar-toggler-icon{
+    background-image: url('image/nav-toggle.svg') !important;
+    background-position: center;
+  }
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+/* Media Query End */
+
